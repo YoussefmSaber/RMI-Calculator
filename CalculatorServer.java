@@ -1,12 +1,12 @@
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
-public class CalcServer {
+public class CalculatorServer {
 
     public static void main(String[] args) {
         try {
             // Create an instance of the remote object
-            CalcImpl calc = new CalcImpl();
+            CalculatorServiceImpl calc = new CalculatorServiceImpl();
 
             // Create the RMI registry on port 1099
             Registry registry = LocateRegistry.createRegistry(1099);
